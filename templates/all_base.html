@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.3.1.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="">
+    <div class="container"><a class="navbar-brand" href="#">
+        <i class="fa d-inline fa-lg fa-file-video-o"></i>
+        <b> Django Videos</b>
+      </a>
+      <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar10">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar10">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/video/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-video-camera"></i> Videos</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><br> <a class="dropdown-item" href="#">Check new</a><a class="dropdown-item" href="#">Check database</a><a class="dropdown-item" href="#">Rename files</a><a class="dropdown-item" href="#">Check database</a><a class="dropdown-item" href="#">Check duplicates</a></div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/artist/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users"></i> Artists</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><br> <a class="dropdown-item" href="#">Check new</a><a class="dropdown-item" href="#">Check database</a><a class="dropdown-item" href="#">Check links</a><a class="dropdown-item" href="#">Check database</a><a class="dropdown-item" href="#">Check duplicates</a></div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/tag/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tags"></i> Tags</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><br> <a class="dropdown-item" href="#">Check new</a><a class="dropdown-item" href="#">Check database</a><a class="dropdown-item" href="#">Check links</a><a class="dropdown-item" href="#">Check database</a><a class="dropdown-item" href="#">Check duplicates</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 d-flex">
+    <div class="container w-100 d-flex">
+      <div class="row d-flex left-content-start flex-grow-0 w-100">
+        <div class="col-md-3 justify-content-start flex-row align-items-start py-1 w-25 d-inline-flex">
+          <ul class="list-group">
+            <li class="list-group-item d-flex flex-row justify-content-start align-items-start flex-grow-1 rounded w-100 disabled" style=""> Artist Name&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; text-align: center;">12</span>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-start align-items-start flex-grow-1 rounded w-100 disabled" style=""> Artist Name&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; text-align: center;">12</span>
+            </li>
+            <li class="list-group-item d-flex flex-row justify-content-start align-items-start flex-grow-1 rounded w-100 disabled" style=""> Artist Name&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; text-align: center;">12</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-9 justify-content-start flex-row align-items-start py-1 w-25 d-inline-flex flex-grow-1 py-1 w-75">
+          <div class="card">
+            <div class="card-header"> Gender&nbsp;<span style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;" class="badge badge-primary badge-pill">12</span></div>
+            <div class="card-body">
+              <h4>Artist 1</h4>
+              <div class="embed-responsive embed-responsive-16by9 shadow rounded border">
+                <video src="https://static.pingendo.com/video-placeholder.mp4" class="embed-responsive-item" controls="controls" width="840" height="480"> Your browser does not support HTML5 video. </video>
+              </div>
+              <p>file_name1</p>
+              <ul class="pagination">
+                <li class="page-item"> <a class="page-link" href="#">Prev</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                <li class="page-item active"> <a class="page-link" href="#">3</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                <li class="page-item" style=""> <a class="page-link" href="#">Next</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"> Gender&nbsp;<span style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;" class="badge badge-primary badge-pill">34</span></div>
+            <div class="card-body">
+              <h4>Artist 2</h4>
+              <div class="embed-responsive embed-responsive-16by9 shadow rounded border">
+                <video src="https://static.pingendo.com/video-placeholder.mp4" class="embed-responsive-item" controls="controls" width="840" height="480"> Your browser does not support HTML5 video. </video>
+              </div>
+              <p>file_name2</p>
+              <ul class="pagination">
+                <li class="page-item"> <a class="page-link" href="#">Prev</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                <li class="page-item active"> <a class="page-link" href="#">3</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                <li class="page-item" style=""> <a class="page-link" href="#">Next</a> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header"> Gender&nbsp;<span style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;" class="badge badge-primary badge-pill">56</span></div>
+            <div class="card-body">
+              <h4>Artist 3</h4>
+              <div class="embed-responsive embed-responsive-16by9 shadow rounded border">
+                <video src="https://static.pingendo.com/video-placeholder.mp4" class="embed-responsive-item" controls="controls" width="840" height="480"> Your browser does not support HTML5 video. </video>
+              </div>
+              <p style="">file_name3</p>
+              <ul class="pagination">
+                <li class="page-item"> <a class="page-link" href="#">Prev</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">1</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">2</a> </li>
+                <li class="page-item active"> <a class="page-link" href="#">3</a> </li>
+                <li class="page-item"> <a class="page-link" href="#">...</a> </li>
+                <li class="page-item" style=""> <a class="page-link" href="#">Next</a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"> </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"> </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"> </li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active"> <img class="d-block img-fluid w-100" src="https://static.pingendo.com/cover-moon.svg">
+                <div class="carousel-caption">
+                  <h5 class="m-0">Carousel</h5>
+                  <p>with indicators</p>
+                </div>
+              </div>
+              <div class="carousel-item "> <img class="d-block img-fluid w-100" src="https://static.pingendo.com/cover-bubble-dark.svg">
+                <div class="carousel-caption">
+                  <h5 class="m-0">Carousel</h5>
+                  <p>with indicators</p>
+                </div>
+              </div>
+              <div class="carousel-item"> <img class="d-block img-fluid w-100" src="https://static.pingendo.com/cover-bubble-light.svg">
+                <div class="carousel-caption">
+                  <h5 class="m-0">Carousel</h5>
+                  <p>with indicators</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
+</body>
+
+</html>

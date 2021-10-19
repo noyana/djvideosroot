@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Homepage
+{% endblock title %}
+
+{% block side_list %}
+    <div class="row-cols-md-auto">
+        <ul class="list-group">
+            <li class="list-group-item d-flex flex-row rounded w-100" style="">
+                <a href="/videos">Videos</a>&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;">{{ video }}</span>
+            </li>
+            <li class="list-group-item d-flex flex-row rounded w-100" style="">
+                <a href="/artists">Artists</a>&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;">{{ artist }}</span>
+            </li>
+            <li class="list-group-item d-flex flex-row rounded w-100" style="">
+                <a href="/folders">Folders</a>&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;">{{ folder }}</span>
+            </li>
+            <li class="list-group-item d-flex flex-row rounded w-100" style="">
+                <a href="/tags">Tags</a>&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;">{{ tag }}</span>
+            </li>
+            <li class="list-group-item d-flex flex-row rounded w-100" style="">
+                <a href="/categories">Categories</a>&nbsp;<span class="badge badge-primary badge-pill" style="background-color: rgb(18, 187, 173); color: rgb(255, 255, 255); font-size: 12px; font-weight: 700; text-align: center; white-space: nowrap;">{{ category }}</span>
+            </li>
+        </ul>
+    </div>
+{% endblock side_list %}
+
+{% block main_content %}
+    <div>There are {{ video }} <a href='/folder'>videos </a> of {{ artist }} <a href='/folder'>artist</a> in
+        {{ folder }} <a href='/folder'>folder</a> tagged with {{ tag }} <a href='/folder'>tag</a> in
+        {{ category }} <a href='/category'>categories</a>
+    </div>
+{% endblock main_content %}

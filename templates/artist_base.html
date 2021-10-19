@@ -1,0 +1,25 @@
+{% extends all_base %}
+
+<div class="py-5 d-flex">
+    <div class="container w-100 d-flex">
+        <div class="row d-flex left-content-start flex-grow-0 w-100">
+            <div class="col-md-3 justify-content-start flex-row align-items-start py-1 w-25 d-inline-flex">
+                {% block list %} Buraya List gelmeliydi!
+                {% endblock list %}
+            </div>
+            <div class="col-md-9 justify-content-start flex-row align-items-start py-1 w-25 d-inline-flex flex-grow-1 py-1 w-75">
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/all.js' %}"></script>
+</body>
+
+</html>

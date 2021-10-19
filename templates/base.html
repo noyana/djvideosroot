@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}"/>
+    {% block sub_css %}{% endblock sub_css %}
+    <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}" />
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="">
+        <div class="container"><a class="navbar-brand" href="/">
+            <i class="fas d-inline fa-lg fa-file-video"></i>
+            <b> Django Videos</b>
+        </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbar10">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar10">
+                <ul class="navbar-nav m-lg-auto">
+                    <li class="nav-item"><a class="nav-link" href="/processAll">Process All</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/videos"
+                                                     id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                                     aria-haspopup="true"
+                                                     aria-expanded="false"><i class="fas fa-video"></i> Videos</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><br> <a
+                                class="dropdown-item"
+                                href="/videos/scanNew">Check new</a><a
+                                class="dropdown-item" href="/videos/scanDuplicates">Check duplicates</a><a
+                                class="dropdown-item" href="/videos/renameAll">Rename
+                            files</a><a class="dropdown-item" href="/videos/scanExisting">Check database</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/artists"
+                                                     id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                                     aria-haspopup="true"
+                                                     aria-expanded="false"><i class="fas fa-users"></i> Artists</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><br> <a
+                                class="dropdown-item" href="/artists/scanDuplicates">Check duplicates</a></div>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="/tags" aria-haspopup="true"
+                                                     aria-expanded="false"><i class="fas fa-tags"></i> Tags</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="/folders" aria-haspopup="true"
+                                                     aria-expanded="false"><i class="fas fa-folder"></i> Folders</a>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="/category_list" aria-haspopup="true"
+                                                     aria-expanded="false"><i class="fas fa-list-alt"></i> Folders</a>
+                    </li>
+                </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Filter" aria-label="Filter">
+                  <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+    </nav>
+<div class="py-5 d-flex">
+    <div class="container w-100 d-flex">
+        <div class="row d-flex left-content-start flex-grow-0 w-100">
+            <div class="col-md-4 justify-content-start flex-row align-items-start py-1 d-inline-flex">
+                {% block side_list %}{% endblock side_list %}
+            </div>
+            <div class="col-md-8 justify-content-start flex-row align-items-start py-1 d-inline-flex flex-grow-1">
+                {% block main_content %}{% endblock main_content %}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/all.js' %}"></script>
+{% block sub_js %}{% endblock sub_js %}
+</body>
+
+</html>
